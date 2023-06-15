@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sangeet AI | Audio Generation</title>
+    <link rel="stylesheet" href="assets/vendor/css/core.css">
+    <link rel="stylesheet" href="assets/vendor/css/theme-default.css">
+    <link rel="stylesheet" href="assets/vendor/fonts/boxicons.css">
+    <link rel="stylesheet" href="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css">
+    <link rel="stylesheet" href="assets/vendor/libs/highlight/highlight.css">
+
+    <style>
+        section{
+            padding: 100px 0;
+        }
+        .nav-ite a{
+        border: none !important;
+        /* margin-right: 10px; */
+        color:  #000 !important;
+        border-radius: 5px !important;
+        background-color: #f0f0f0 !important;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- 
+        Author: Tobi TheRevolutionary https://github.com/Tobitheprof 
+    -->
+
+    <!-- 
+        If you're wondering why this project looks bad, it's because the budget made by the client was too low.
+    -->
+
+    <!-- Navbar Start -->
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-md navbar-light light-bg  shadow sticky-top p-4">
+            <div class="container-xl">
+                <a href="#" class="navbar-brand">
+                    SangeetAI
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center align-center" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="javascript:void(0)">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Products
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="javascript:void(0)">Action</a></li>
+                            <li><a class="dropdown-item" href="javascript:void(0)">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="javascript:void(0)">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Resources
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                            <li><a class="dropdown-item" href="javascript:void(0)">Action</a></li>
+                            <li><a class="dropdown-item" href="javascript:void(0)">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="javascript:void(0)">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <form class="d-none d-md-block" onsubmit="return false">
+                    <button class="btn btn-primary" type="submit">Create Account</button>
+                    <button class="btn btn-outline-primary" type="submit">Login</button>
+                </form>
+            </div>
+            <div class="border-bottom"></div>
+        </nav>
+    </header>
+    <!-- Navbar End -->
+
+    <!-- Hero Start -->
+    <section id="hero" class="hero-bg">
+        <div class="container text-center">
+            <h1 class="fw-bold">Frequently Asked Questions</h1>
+            <p class="lead text-muted">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias dolor rem fugiat. Tempora doloremque, hic temporibus at necessitatibus culpa ab a ut neque deleniti commodi totam molestias amet aliquam reprehenderit.</p>
+        </div>
+    </section>
+    <!-- Hero End -->
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-sm-8">
+                    <div class="p-3">
+                        <i class="bx bx-music" style="color: #000;"></i>
+                        <h5 class="fw-bold mt-2" style="color: #000;">What is Music AI Service?</h5>
+                        <p class="text-muted">The Music AI Service is an advanced artificial intelligence
+                        platform that utilizes machine learning algorithms to generate,
+                        manipulate, and remix music automatically.</p>
+                    </div>
+                    <div class="p-3">
+                        <i class="bx bx-music" style="color: #000;"></i>
+                        <h5 class="fw-bold mt-2" style="color: #000;">What formats are supported for generated melodies and remixed songs?</h5>
+                        <p class="text-muted">Generated melodies are provided as MIDI files, while remixed
+                        songs are available in popular audio formats such as MP3,
+                        WAV, or FLAC. The specific format can be specified in the
+                        request or will be indicated in the response headers.</p>
+                    </div>
+                    <div class="p-3">
+                        <i class="bx bx-music" style="color: #000;"></i>
+                        <h5 class="fw-bold mt-2" style="color: #000;">Are there any limitations on the length or complexity of the generated melodies or remixes?</h5>
+                        <p class="text-muted">While the Music AI Service API supports melodies and remixes
+                        of varying lengths and complexity, there might be certain
+                        limitations based on the available computational resources. It
+                        is recommended to refer to the API documentation for any
+                        specific limitations or guidelines</p>
+                    </div>
+                    
+                    <div class="p-3">
+                        <i class="bx bx-music" style="color: #000;"></i>
+                        <h5 class="fw-bold mt-2" style="color: #000;">Is the Music AI Service API suitable for commercial use?</h5>
+                        <p class="text-muted">Yes, the Music AI Service API can be used for commercial
+                        purposes. However, it is essential to review and comply with
+                        the API's terms of service and any applicable licensing
+                        requirements for the generated or remixed music</p>
+                    </div>
+                    <div class="p-3">
+                        <i class="bx bx-music" style="color: #000;"></i>
+                        <h5 class="fw-bold mt-2" style="color: #000;">Are there any sample code or SDKs available to help me get started</h5>
+                        <p class="text-muted">Yes, the Music AI Service API documentation includes sample
+                            code snippets in popular programming languages to assist
+                            developers in understanding the API usage. Additionally,
+                            software development kits (SDKs) may be available for
+                            specific programming languages or frameworks to further
+                            simplify integration.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-8">
+                    <div class="p-3">
+                        <i class="bx bx-music" style="color: #000;"></i>
+                        <h5 class="fw-bold mt-2" style="color: #000;">How can I access the Music AI Service API?</h5>
+                        <p class="text-muted">To access the Music AI Service API, you need to sign up for an
+                        API key. Please refer to the API Key section in the
+                        documentation for detailed instructions on obtaining an API
+                        key.</p>
+                    </div>
+                    <div class="p-3">
+                        <i class="bx bx-music" style="color: #000;"></i>
+                        <h5 class="fw-bold mt-2" style="color: #000;">Can I customize the musical style or genre of the generated melodies or remixes</h5>
+                        <p class="text-muted">Yes, the Music AI Service API provides options to customize
+                        the musical style or genre of the generated melodies or
+                        remixes. You can specify parameters like tempo, key, scale,
+                        and even choose specific remix types (e.g., chill, dance, jazz)
+                        to achieve the desired musical output.</p>
+                    </div>
+                    <div class="p-3">
+                        <i class="bx bx-music" style="color: #000;"></i>
+                        <h5 class="fw-bold mt-2" style="color: #000;">Can I integrate the Music AI Service API into my
+                        own music production software or application?</h5>
+                        <p class="text-muted">Absolutely! The Music AI Service API is designed to be easily
+                        integrated into third-party applications, software, or
+                        platforms. The documentation provides detailed information
+                        on API endpoints, request formats, and authentication
+                        methods to facilitate seamless integration.</p>
+                    </div>
+                    <div class="p-3">
+                        <i class="bx bx-music" style="color: #000;"></i>
+                        <h5 class="fw-bold mt-2" style="color: #000;">What kind of support or assistance is available for developers using the Music AI Service API?</h5>
+                        <p class="text-muted">The Music AI Service API documentation provides
+                        comprehensive guidance on using the API, including detailed
+                        endpoint descriptions, request and response formats, and
+                        authentication instructions. Additionally, developer support
+                        channels such as documentation forums or email support are
+                        available for further assistance.</p>
+                    </div>
+                    <div class="p-3">
+                        <i class="bx bx-music" style="color: #000;"></i>
+                        <h5 class="fw-bold mt-2" style="color: #000;">Is there a sandbox or testing environment available for API development and experimentation?</h5>
+                        <p class="text-muted">Yes, the Music AI Service API may provide a sandbox or
+                        testing environment where you can experiment with the API's
+                        functionalities without affecting live production data. Details
+                        on accessing and utilizing the sandbox environment can be found in the documentation</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container hero-bg p-4" style="border-radius: 15px;">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-sm-12">
+                    <p class="lead">Still have questions?</p>
+                    <p class="text-muted">Can't find the answers you're looking for? Please chat with our friendly team</p>
+                </div>
+                <div class="col-lg-6 col-sm-12 text-end">
+                    <a href="#" class="btn btn-primary">Get in touch</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+    <script src="assets/vendor/js/helpers.js"></script>
+    <script src="assets/vendor/js/bootstrap.js"></script>    
+    <script src="assets/vendor/libs/jquery/jquery.js"></script>    
+    <script src="assets/vendor/libs/popper/popper.js"></script>    
+    <script src="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/vendor/js/menu.js"></script>    
+
+</body>
+</html>
+
+
