@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sangeet AI | Audio Generation</title>
+    <link rel="stylesheet" href="assets/vendor/css/core.css">
+    <link rel="stylesheet" href="assets/vendor/css/theme-default.css">
+    <link rel="stylesheet" href="assets/vendor/fonts/boxicons.css">
+    <link rel="stylesheet" href="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css">
+    <link rel="stylesheet" href="assets/vendor/libs/highlight/highlight.css">
+
+    <style>
+        section{
+            padding: 100px 0;
+        }
+        .nav-ite a{
+        border: none !important;
+        /* margin-right: 10px; */
+        color:  #000 !important;
+        border-radius: 5px !important;
+        background-color: #f0f0f0 !important;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- 
+        Author: Tobi TheRevolutionary https://github.com/Tobitheprof 
+    -->
+
+    <!-- 
+        If you're wondering why this project looks bad, it's because the budget made by the client was too low.
+    -->
+
+    <!-- Navbar Start -->
+
+    <header class="">
+
+        <nav class="navbar navbar-expand-md navbar-light  shadow sticky-top p-4">
+            <div class="container-xl">
+                <a href="#" class="navbar-brand">
+                    SangeetAI
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center align-center" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="javascript:void(0)">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Products
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="javascript:void(0)">Action</a></li>
+                            <li><a class="dropdown-item" href="javascript:void(0)">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="javascript:void(0)">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Resources
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                            <li><a class="dropdown-item" href="javascript:void(0)">Action</a></li>
+                            <li><a class="dropdown-item" href="javascript:void(0)">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="javascript:void(0)">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <form class="d-none d-md-block" onsubmit="return false">
+                    <button class="btn btn-primary" type="submit">Create Account</button>
+                    <button class="btn btn-outline-primary" type="submit">Login</button>
+                </form>
+            </div>
+            <div class="border-bottom"></div>
+        </nav>
+        
+
+    </header>
+
+
+    <!-- Navbar End -->
+
+    <!-- Main Content Start -->
+    <section id="" class="p-auto">
+        <div class="container align-items-centter">
+            <div class="row">
+
+                <div class="col-lg-6 col-md-6 sol-sm-6 mb-2">
+                    <input type="search" name="" id="" class="form-control" placeholder="Untitled">
+                </div>
+
+                <div class="col-lg-6 col-md-6 text-end mb-2">
+                    <button class="btn btn-primary p-2"><i class="bx bx-upload me-2"></i>Upload Audio</button>
+                    <button class="btn btn-outline-secondary p-2"><i class="bx bx-microphone me-2"></i>Record Audio</button>
+                </div>
+                
+            </div>
+
+            <div class="pills mt-5">
+                <!-- Tabs navs -->
+                <ul class="nav nav-pills mb-3" id="ex-with-icons" role="tablist">
+                    <li class="nav-ite me-2" role="presentation">
+                    <a class="nav-link" id="ex-with-icons-tab-1" data-mdb-toggle="tab" href="#ex-with-icons-tabs-1" role="tab"
+                        aria-controls="ex-with-icons-tabs-1" aria-selected="true">Song Type <i class="bx bx-chevron-down"></i></a>
+                    </li>
+                    <li class="nav-ite me-2" role="presentation">
+                    <a class="nav-link" id="ex-with-icons-tab-2" data-mdb-toggle="tab" href="#ex-with-icons-tabs-2" role="tab"
+                        aria-controls="ex-with-icons-tabs-2" aria-selected="false">Mood Type  <i class="bx bx-chevron-down"></i></a>
+                    </li>
+                    <li class="nav-ite me-2" role="presentation">
+                    <a class="nav-link" id="ex-with-icons-tab-3" data-mdb-toggle="tab" href="#ex-with-icons-tabs-3" role="tab"
+                        aria-controls="ex-with-icons-tabs-3" aria-selected="false">Music Style  <i class="bx bx-chevron-down"></i></a>
+                    </li>
+                    <li class="nav-ite me-2" role="presentation">
+                        <a class="nav-link" id="ex-with-icons-tab-3" data-mdb-toggle="tab" href="#ex-with-icons-tabs-3" role="tab"
+                            aria-controls="ex-with-icons-tabs-3" aria-selected="false">Voice Type  <i class="bx bx-chevron-down"></i></a>
+                    </li>
+                    <li class="nav-ite me-2" role="presentation">
+                        <a class="nav-link" id="ex-with-icons-tab-3" data-mdb-toggle="tab" href="#ex-with-icons-tabs-3" role="tab"
+                            aria-controls="ex-with-icons-tabs-3" aria-selected="false">English(US)  <i class="bx bx-chevron-down"></i></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="row">
+                <div class="col text-start">
+                    <form action="" method="POST" class="mt-2">
+                        <textarea name="text" id="text" cols="30" rows="10" class="form-control"></textarea>
+                    </form>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <button class="btn btn-primary p-2"><i class="bx bx-play me-2"></i>Generate Audio</button>
+
+            </div>
+            <div class="text-center mt-2">
+                <button class="btn btn-outline-secondary p-2"><i class="bx bx-download me-2"></i>Download Audio</button>
+            </div>
+        </div>
+    </section>
+    <!-- Main Cintent End -->
+
+
+
+    <script src="assets/vendor/js/helpers.js"></script>
+    <script src="assets/vendor/js/bootstrap.js"></script>    
+    <script src="assets/vendor/libs/jquery/jquery.js"></script>    
+    <script src="assets/vendor/libs/popper/popper.js"></script>    
+    <script src="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/vendor/js/menu.js"></script>    
+
+</body>
+</html>

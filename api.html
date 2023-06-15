@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sangeet AI | Audio Generation</title>
+    <link rel="stylesheet" href="assets/vendor/css/core.css">
+    <link rel="stylesheet" href="assets/vendor/css/theme-default.css">
+    <link rel="stylesheet" href="assets/vendor/fonts/boxicons.css">
+    <link rel="stylesheet" href="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css">
+    <link rel="stylesheet" href="assets/vendor/libs/highlight/highlight.css">
+
+    <style>
+        section{
+            padding: 100px 0;
+        }
+        .nav-ite a{
+        border: none !important;
+        /* margin-right: 10px; */
+        color:  #000 !important;
+        border-radius: 5px !important;
+        background-color: #f0f0f0 !important;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- 
+        Author: Tobi TheRevolutionary https://github.com/Tobitheprof 
+    -->
+
+    <!-- 
+        If you're wondering why this project looks bad, it's because the budget made by the client was too low.
+    -->
+
+    <!-- Navbar Start -->
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-md navbar-light light-bg  shadow sticky-top p-4">
+            <div class="container-xl">
+                <a href="#" class="navbar-brand">
+                    SangeetAI
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center align-center" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="javascript:void(0)">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Products
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="javascript:void(0)">Action</a></li>
+                            <li><a class="dropdown-item" href="javascript:void(0)">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="javascript:void(0)">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Resources
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                            <li><a class="dropdown-item" href="javascript:void(0)">Action</a></li>
+                            <li><a class="dropdown-item" href="javascript:void(0)">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="javascript:void(0)">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <form class="d-none d-md-block" onsubmit="return false">
+                    <button class="btn btn-primary" type="submit">Create Account</button>
+                    <button class="btn btn-outline-primary" type="submit">Login</button>
+                </form>
+            </div>
+            <div class="border-bottom"></div>
+        </nav>
+    </header>
+    <!-- Navbar End -->
+
+    <section id="hero" class="hero-bg">
+        <div class="container text-center">
+            <h1 class="fw-bold">API Documentation</h1>
+            <p class="lead text-muted">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias dolor rem fugiat. Tempora doloremque, hic temporibus at necessitatibus culpa ab a ut neque deleniti commodi totam molestias amet aliquam reprehenderit.</p>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-sm-8">
+                    <h3>Introduction</h3>
+                    <p class="text-muted">
+                        The Music AI API service allows developers to harness the power of artificial intelligence to generate and manipulate music. This documentation provides detailed information on API Endpoints, Request Parameters, Authentication and Response Formats.
+                    </p>
+                    <h3>Authentication</h3>
+                    <p class="text-muted">
+                        All API requests require authentication. To authenticate, include your API key in the authorization header as follows<br> Authorizaton: Bearer YOUR_API_KEY
+                    </p>
+                    <h3>Endpoints</h3>
+                    <h5>1. Generate Melody</h5>
+                    <p class="text-muted">Generate a new melody using AI Algorithms</p>
+                    <ul>
+                        <li class="text-muted">Endpoint: /melody</li>
+                        <li class="text-muted">HTTP Method: POST</li>
+                    </ul>
+                    <p class="text-muted">Parameters</p>
+                    <ul class="text-muted">
+                        <li>Length (required): The length of the melody in bars or beats</li>
+                        <li>Tempo (optional): The tempo of the melody in beats per minute (default: 120)</li>
+                        <li>Key (optional): The musical key of the melody (default: C major)</li>
+                        <li>Scale (optional): The musical scale of the melody (default: major)</li>
+
+                    </ul>
+                    <p class="text-muted">Request Body</p>
+                    <p class="text-muted">The request body should contain additional parameters or settings specific to the melody of the given algorithm</p>
+                    <p class="text-muted">Response</p>
+                    <p class="text-muted">The response will include a MIDI file representing the generated melody.</p>
+                    <p class="text-muted">Example request</p>
+                    <p class="text-muted">POST/melody</p>
+                    <p class="text-muted">Authorizaton: Bearer YOUR_API_KEY</p>
+                    <p class="text-muted">}</p>
+                    <p class="text-muted">"length" :8,</p>
+                    <p class="text-muted">"tempo" : 100,</p>
+                    <p class="text-muted">"key" : "G"</p>
+                    <p class="text-muted">"scale" : "minor"</p>
+                    <p class="text-muted">}</p>
+                    <p class="text-muted">HTTP/1.1 OK</p>
+                    <p class="text-muted">Conten-Type: audio/midi</p>
+                    <p class="text-muted">midi-file</p>
+                    <h3 class="fw-bold">Remix Song</h3>
+                    <p class="text-muted">Remix an existing song using AI Algorithms</p>
+                    <ul class="text-muted">
+                        <li>Endpoint: /remix</li>
+                        <li>HTTP Method: POST</li>
+                    </ul>
+                    <p class="text-muted">Parameters</p>
+                    <ul class="text-muted">
+                        <li>song_id (required): The identifier of the song to remix</li>
+                        <li>remix_type (optional): The type of remix to perform (e.g. "chill", "dance", "jazz"). </li>
+                        <li>remix_settings (optional): Additional settings or parameters specific to the remix algorithm.</li>
+                        <p class="text-muted">Response</p>
+                        <p class="text-muted">The response will include an auido file representing the remixed song.</p>
+                        <p class="text-muted">Example request</p>
+                        <p class="text-muted">POST /remix</p>
+                        <p class="text-muted">Authorizaton: Bearer YOUR_API_KEY</p>
+                        <p class="text-muted">{</p>
+                        <p class="text-muted">"song_type" : "12345",</p>
+                        <p class="text-muted">"remix_type" : "dance",</p>
+                        <p class="text-muted">"remix_settings" :{</p>
+                        <p class="text-muted">"tempo" : 130</p>
+                        <p class="text-muted">"effects" : {</p>
+                        <p class="text-muted">"reverb" : true,</p>
+                        <p class="text-muted">"delay" : true</p>
+                        <p class="text-muted">}</p>
+                        <p class="text-muted">}</p>
+                        <p class="text-muted">HTTP/1.1 200 OK</p>
+                        <p class="text-muted">Content-type: audio/mp3</p>
+                        <p class="text-muted">remixed-audio.file</p>
+                    </ul>
+                </div>
+                <div class="col-lg-6 col-sm-8">
+                    <h3>API Base URL</h3>
+                    <p class="text-muted">https://api.musicalservice.com/v1</p>
+                    <h3>Error Handling</h3>
+                    <p class="text-muted">In case of errors, the API will respond with appropriate status
+                    codes and error messages. Please refer to the Error Handling
+                    section for more details.</p>
+                    <h3>Conclusion</h3>
+                    <p class="text-muted">The Music AI Service API documentation provides
+                    comprehensive information on the available endpoints,
+                    request parameters, authentication, and response formats. It
+                    empowers developers to leverage AI-powered music
+                    generation and remixing capabilities in their applications,
+                    opening up exciting possibilities for musical creativity.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="assets/vendor/js/helpers.js"></script>
+    <script src="assets/vendor/js/bootstrap.js"></script>    
+    <script src="assets/vendor/libs/jquery/jquery.js"></script>    
+    <script src="assets/vendor/libs/popper/popper.js"></script>    
+    <script src="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/vendor/js/menu.js"></script>    
+
+</body>
+</html>
